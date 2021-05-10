@@ -1,7 +1,7 @@
 // Link URL
 var tahun = new Date().getFullYear();
 var bulan = parseInt(new Date().getMonth())+1;
-var url = "https://cors-anywhere.herokuapp.com/https://kalenderindonesia.com/api/APIhVyHsnCGAe/kalender/masehi/"+tahun+"/"+bulan;
+var url = "https://cors-anywhere.herokuapp.com/https://kalenderindonesia.com/api/APIhVyHsnCGAe/kalender/hijriah/"+tahun+"/"+bulan;
 var link = "https://kalenderindonesia.com/api/APIhVyHsnCGAe/kalender/masehi/"+tahun+"/"+bulan;
 
 document.getElementById("linkk").href = link;
@@ -36,22 +36,28 @@ http.addEventListener("load", () => {
         //JIKA HARI INI MINGGU, ISI MINGGU
         if (hari[i].text.W == "Ahad") {
             if (document.getElementById('ahad1').textContent == "") {
-                document.getElementById("ahad1").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("ahad1").innerHTML += hari[i].day.M;
+                sekarang("ahad1");
             } else
             if (document.getElementById('ahad2').textContent == "") {
-                document.getElementById("ahad2").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("ahad2").innerHTML += hari[i].day.M;
+                sekarang("ahad2");
             } else
             if (document.getElementById('ahad3').textContent == "") {
-                document.getElementById("ahad3").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("ahad3").innerHTML += hari[i].day.M;
+                sekarang("ahad3");
             } else
             if (document.getElementById('ahad4').textContent == "") {
-                document.getElementById("ahad4").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("ahad4").innerHTML += hari[i].day.M;
+                sekarang("ahad4");
             } else
             if (document.getElementById('ahad5').textContent == "") {
-                document.getElementById("ahad5").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("ahad5").innerHTML += hari[i].day.M;
+                sekarang("ahad5");
             } else
             if (document.getElementById('ahad6').textContent == "") {
-                document.getElementById("ahad6").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("ahad6").innerHTML += hari[i].day.M;
+                sekarang("ahad6");
             } else {
                 console.log("Ahad");
             }
@@ -59,22 +65,28 @@ http.addEventListener("load", () => {
         //JIKA HARI INI SENIN, ISI SENIN
         if (hari[i].text.W == "Senin") {
             if (document.getElementById('senin1').textContent == "") {
-                document.getElementById("senin1").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("senin1").innerHTML += hari[i].day.M;
+                sekarang("senin1");
             } else
             if (document.getElementById('senin2').textContent == "") {
-                document.getElementById("senin2").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("senin2").innerHTML += hari[i].day.M;
+                sekarang("senin2");
             } else
             if (document.getElementById('senin3').textContent == "") {
-                document.getElementById("senin3").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("senin3").innerHTML += hari[i].day.M ;
+                sekarang("senin3");
             } else
             if (document.getElementById('senin4').textContent == "") {
-                document.getElementById("senin4").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("senin4").innerHTML += hari[i].day.M;
+                sekarang("senin4");
             } else
             if (document.getElementById('senin5').textContent == "") {
-                document.getElementById("senin5").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("senin5").innerHTML += hari[i].day.M;
+                sekarang("senin5");
             } else
             if (document.getElementById('senin6').textContent == "") {
-                document.getElementById("senin6").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("senin6").innerHTML += hari[i].day.M;
+                sekarang("senin6");
             } else {
                 console.log("Senin");
             }
@@ -82,22 +94,28 @@ http.addEventListener("load", () => {
         //JIKA HARI INI SELASA, ISI SELASA
         if (hari[i].text.W == "Selasa") {
             if (document.getElementById('selasa1').textContent == "") {
-                document.getElementById("selasa1").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("selasa1").innerHTML += hari[i].day.M;
+                sekarang("selasa1");
             } else
             if (document.getElementById('selasa2').textContent == "") {
-                document.getElementById("selasa2").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("selasa2").innerHTML += hari[i].day.M;
+                sekarang("selasa2");
             } else
             if (document.getElementById('selasa3').textContent == "") {
-                document.getElementById("selasa3").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("selasa3").innerHTML += hari[i].day.M;
+                sekarang("selasa3");
             } else
             if (document.getElementById('selasa4').textContent == "") {
-                document.getElementById("selasa4").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("selasa4").innerHTML += hari[i].day.M;
+                sekarang("selasa4");
             } else
             if (document.getElementById('selasa5').textContent == "") {
-                document.getElementById("selasa5").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("selasa5").innerHTML += hari[i].day.M;
+                sekarang("selasa5");
             } else
             if (document.getElementById('selasa6').textContent == "") {
-                document.getElementById("selasa6").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("selasa6").innerHTML += hari[i].day.M;
+                sekarang("selasa6");
             } else {
                 console.log("Selasa");
             }
@@ -105,22 +123,28 @@ http.addEventListener("load", () => {
         //JIKA HARI INI RABU, ISI RABU
         if (hari[i].text.W == "Rabu") {
             if (document.getElementById('rabu1').textContent == "") {
-                document.getElementById("rabu1").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("rabu1").innerHTML += hari[i].day.M;
+                sekarang("rabu1");
             } else
             if (document.getElementById('rabu2').textContent == "") {
-                document.getElementById("rabu2").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("rabu2").innerHTML += hari[i].day.M;
+                sekarang("rabu2");
             } else
             if (document.getElementById('rabu3').textContent == "") {
-                document.getElementById("rabu3").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("rabu3").innerHTML += hari[i].day.M;
+                sekarang("rabu3");
             } else
             if (document.getElementById('rabu4').textContent == "") {
-                document.getElementById("rabu4").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("rabu4").innerHTML += hari[i].day.M;
+                sekarang("rabu4");
             } else
             if (document.getElementById('rabu5').textContent == "") {
-                document.getElementById("rabu5").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("rabu5").innerHTML += hari[i].day.M;
+                sekarang("rabu5");
             } else
             if (document.getElementById('rabu6').textContent == "") {
-                document.getElementById("rabu6").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("rabu6").innerHTML += hari[i].day.M;
+                sekarang("rabu6");
             } else {
                 console.log("Rabu");
             }
@@ -128,22 +152,28 @@ http.addEventListener("load", () => {
         //JIKA HARI INI KAMIS, ISI KAMIS
         if (hari[i].text.W == "Kamis") {
             if (document.getElementById('kamis1').textContent == "") {
-                document.getElementById("kamis1").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("kamis1").innerHTML += hari[i].day.M;
+                sekarang("kamis1");
             } else
             if (document.getElementById('kamis2').textContent == "") {
-                document.getElementById("kamis2").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("kamis2").innerHTML += hari[i].day.M;
+                sekarang("kamis2");
             } else
             if (document.getElementById('kamis3').textContent == "") {
-                document.getElementById("kamis3").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("kamis3").innerHTML += hari[i].day.M;
+                sekarang("kamis3");
             } else
             if (document.getElementById('kamis4').textContent == "") {
-                document.getElementById("kamis4").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("kamis4").innerHTML += hari[i].day.M;
+                sekarang("kamis4");
             } else
             if (document.getElementById('kamis5').textContent == "") {
-                document.getElementById("kamis5").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("kamis5").innerHTML += hari[i].day.M;
+                sekarang("kamis5");
             } else
             if (document.getElementById('kamis6').textContent == "") {
-                document.getElementById("kamis6").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("kamis6").innerHTML += hari[i].day.M;
+                sekarang("kamis6");
             } else {
                 console.log("Kamis");
             }
@@ -151,22 +181,28 @@ http.addEventListener("load", () => {
         //JIKA HARI INI JUMAT, ISI JUMAT
         if (hari[i].text.W == "Jumat") {
             if (document.getElementById('jumat1').textContent == "") {
-                document.getElementById("jumat1").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("jumat1").innerHTML += hari[i].day.M;
+                sekarang("jumat1");
             } else
             if (document.getElementById('jumat2').textContent == "") {
-                document.getElementById("jumat2").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("jumat2").innerHTML += hari[i].day.M;
+                sekarang("jumat2");
             } else
             if (document.getElementById('jumat3').textContent == "") {
-                document.getElementById("jumat3").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("jumat3").innerHTML += hari[i].day.M;
+                sekarang("jumat3");
             } else
             if (document.getElementById('jumat4').textContent == "") {
-                document.getElementById("jumat4").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("jumat4").innerHTML += hari[i].day.M;
+                sekarang("jumat4");
             } else
             if (document.getElementById('jumat5').textContent == "") {
-                document.getElementById("jumat5").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("jumat5").innerHTML += hari[i].day.M;
+                sekarang("jumat5");
             } else
             if (document.getElementById('jumat6').textContent == "") {
-                document.getElementById("jumat6").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("jumat6").innerHTML += hari[i].day.M;
+                sekarang("jumat6");
             } else {
                 console.log("Jum'at");
             }
@@ -174,27 +210,40 @@ http.addEventListener("load", () => {
         //JIKA HARI INI SABTU, ISI SABTU
         if (hari[i].text.W == "Sabtu") {
             if (document.getElementById('sabtu1').textContent == "") {
-                document.getElementById("sabtu1").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("sabtu1").innerHTML += hari[i].day.M;
+                sekarang("sabtu1");
             } else
             if (document.getElementById('sabtu2').textContent == "") {
-                document.getElementById("sabtu2").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("sabtu2").innerHTML += hari[i].day.M;
+                sekarang("sabtu2");
             } else
             if (document.getElementById('sabtu3').textContent == "") {
-                document.getElementById("sabtu3").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("sabtu3").innerHTML += hari[i].day.M;
+                sekarang("sabtu3");
             } else
             if (document.getElementById('sabtu4').textContent == "") {
-                document.getElementById("sabtu4").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("sabtu4").innerHTML += hari[i].day.M;
+                sekarang("sabtu4");
             } else
             if (document.getElementById('sabtu5').textContent == "") {
-                document.getElementById("sabtu5").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("sabtu5").innerHTML += hari[i].day.M;
+                sekarang("sabtu5");
             } else
             if (document.getElementById('sabtu6').textContent == "") {
-                document.getElementById("sabtu6").innerHTML += hari[i].day.M + "<br>";
+                document.getElementById("sabtu6").innerHTML += hari[i].day.M;
+                sekarang("sabtu6");
             } else {
                 console.log("Sabtu");
             }
             
         }
+    }
+    
+    //HARI SEKARANG ABU_ABU
+    function sekarang(pesan) {
+            if (new Date().getDate() == hari[i].day.M) {
+                document.getElementById(pesan).style.color = 'grey';
+            }
     }
 
     //KETERANGAN
@@ -215,9 +264,6 @@ http.addEventListener("load", () => {
         var tanggal = libur[i].date;
         document.getElementById("liburan").innerHTML += waktun(tanggal) + " : " + libur[i].name + "<br>";
     }
-
-
-        console.log(respond);
 });
 
 
