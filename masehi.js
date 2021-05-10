@@ -1,7 +1,7 @@
 // Link URL
 var tahun = new Date().getFullYear();
 var bulan = parseInt(new Date().getMonth())+1;
-var url = "https://cors-anywhere.herokuapp.com/https://kalenderindonesia.com/api/APIhVyHsnCGAe/kalender/hijriah/"+tahun+"/"+bulan;
+var url = "https://cors-anywhere.herokuapp.com/https://kalenderindonesia.com/api/APIhVyHsnCGAe/kalender/masehi/"+tahun+"/"+bulan;
 var link = "https://kalenderindonesia.com/api/APIhVyHsnCGAe/kalender/masehi/"+tahun+"/"+bulan;
 
 document.getElementById("linkk").href = link;
