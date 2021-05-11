@@ -260,6 +260,10 @@ http.addEventListener("load", () => {
     document.getElementById("tahuns").innerHTML += tahun;
 
     //LIBURAN
+    if (respond.data.monthly.holiday.count == 0) {
+        return document.getElementById("liburan").innerHTML += "Tidak ada data libur";
+    }
+
     for (i = 0; i < libur.length; i++) {
         var tanggal = libur[i].date;
         document.getElementById("liburan").innerHTML += waktun(tanggal) + " : " + libur[i].name + "<br>";
